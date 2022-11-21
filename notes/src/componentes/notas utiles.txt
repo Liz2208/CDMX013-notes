@@ -1,0 +1,17 @@
+testimonio.js // aqui agregamos los datos
+export function Testimonio(props){
+  return(
+    <div className='contenedor-testimonio'>
+      <img className='imagen-testimonio'
+      src={require('../images/Dont.png')} 
+      alt='notita'/>
+      <div className='contenedor-texto'>
+        <p className='nombre'>{props.nombre} en {props.pais}  </p>
+        <p className='cargo'>{props.cargo} en {props.empresa} </p>
+        <p className='texto'>"{props.testimonio}" </p>
+      </div>
+    </div>
+  );
+}
+
+
