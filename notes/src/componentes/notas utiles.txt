@@ -28,3 +28,9 @@ export function Testimonio(props){
           src={require('../images/btn_google.png')}
         />
          </div>
+
+
+// boton google debe ir dentro de home
+          <div className="googlebtn">
+        <img className='googlebtn' src={require('../images/btn_google.png')} />
+      </div>

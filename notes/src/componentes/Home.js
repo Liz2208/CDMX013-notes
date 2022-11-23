@@ -9,10 +9,9 @@ export function Home() {
         src={require('../images/Dont.png')}
         alt='notita' />
       <div className="googlebtn">
-        <img className='googlebtn'
-          src={require('../images/btn_google.png')}
-        />
-      </div>    
+      <button onclick="activateLasers()" > entremos </button>
+        <img className='googlebtn' src={require('../images/btn_google.png')} />
+      </div>
     </div>
   );
 }

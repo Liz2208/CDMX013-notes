@@ -6,6 +6,7 @@
 html,
 body {
   font-size: 18px;
+  color:#5CE1E6 ;
   background-color: #f5f6f7;
 }
 
@@ -23,12 +24,15 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  
 }
 
 .conteneedor-principal {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   min-height: 600px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
+

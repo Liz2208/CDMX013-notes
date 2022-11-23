@@ -1,13 +1,16 @@
 import './App.css';
-import {Home, Testimonio} from './componentes/Home.js'
+//import { Home } from './componentes/Home';
+import { Main } from './componentes/Main';
+//import Login from './Login';
+
 
 function App() {
   return (
     <div className="App">
      <div className='contenedor-principal'>
-      <h1>WELCOME</h1>
-      <Home
-       />
+      
+      
+      <Main />
       </div>
     </div>
   );
