@@ -15,3 +15,16 @@ export function Testimonio(props){
 }
 
 
+ <div className='contenedor-principal'>
+      <h1>WELCOME</h1>
+      <Home
+       />
+      </div>
+
+
+
+      //home.js <div className="googlebtn">
+        <img className='googlebtn'
+          src={require('../images/btn_google.png')}
+        />
+         </div>
