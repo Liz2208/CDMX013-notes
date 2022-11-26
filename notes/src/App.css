@@ -8,7 +8,7 @@ body {
   font-size: 18px;
   color:#5CE1E6 ;
   background-color: #f5f6f7;
-}
+ }
 
 h1 {
   max-width: 940px;
@@ -16,6 +16,7 @@ h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
   line-height: 2;
+  text-shadow: 0 0 3px #2600ff, 0 0 5px #0000FF;
 }
 
 .App{
@@ -34,5 +35,7 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  background-color:chartreuse;
+  
 }
 
