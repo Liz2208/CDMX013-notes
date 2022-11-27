@@ -1,15 +1,19 @@
 import React from 'react';
 import '../style/Tarea.css';
-import { AiOutlineCloseSquare } from "react-icons/ai";
+import { borrar } from "../images/borrar.png";
 
-function Tarea({ texto, completada }) {
+function Tarea({ id, texto, completada, completarTarea, eliminarTarea }) {
     return (
         <div className={completada ? 'tarea-contenedor completada': 'tarea-contenedor' }>
-            <div className='tarea-texto'>
+            <div 
+            className='tarea-texto'
+            onClick={() => completarTarea(id) }>
                 {texto}
             </div>
-            <div className='tarea-contenedor-iconos'>
-                <AiOutlineCloseSquare className='tarea-icono' />
+            <div 
+            className='tarea-contenedor-iconos'
+            onClick={() => eliminarTarea(id)}>
+                <button  className='tarea-icono' />
             </div>
         </div>
     );

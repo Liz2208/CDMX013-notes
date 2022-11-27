@@ -1,41 +1,44 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  font-size: 18px;
-  color:#5CE1E6 ;
-  background-color: #f5f6f7;
+  font-size: 15px;
+  color:#0daaaf ;
+  background-color: #e8edf1;
+  
  }
 
 h1 {
-  max-width: 940px;
   font-size: 2.5em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;
-  line-height: 2;
+  font-weight: 500;
   text-shadow: 0 0 3px #2600ff, 0 0 5px #0000FF;
 }
 
 .App{
-  min-height: 100vh;
-  display: flex;
+  min-height: 300px;
+  display: absolute;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   
 }
 
-.conteneedor-principal {
+.contenedor-principal {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  min-height: 600px;
-  display: flex;
+  display: absolute;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  background-color:chartreuse;
-  
+  justify-content: center; 
 }
+
+.logo-notes{
+  width: 150px;
+  height: 150px;
+}
+
 

@@ -1,17 +1,29 @@
 .tarea-contenedor{
-    width: 500px;
+    width: 330px;
     /*height: 500px;*/
-    min-height: 65px;
-    margin: 5px 0;
-    padding: 8px 15px 8px 20px;
+    min-height: 467px;
+    margin: 15px ;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    /*background-image: url('../images/notebook.png');*/
-    background-color: blue;
-    border: 5px solid black;
+    background-image: url('../images/notebook.png');
+    /*background-color: rgb(236, 236, 247);
+    border: 1px solid black;*/
 }
+
+/* el hijo para cambiar colores en cada tarea*/ 
+/*.tarea-contenedor:nth-child(3n +1 ) {
+background-color: #c8c8f5;
+background-image: url('../images/notebook.png') ;
+}
+.tarea-contenedor:nth-child(3n +2 ) {
+    background-color: #a8d1e4;
+    }
+    .tarea-contenedor:nth-child(3n +3 ) {
+        background-color: #8af1ec;
+        }*/
 
 .tarea-texto{
     width: 100%;
@@ -20,13 +32,16 @@
     display: flex;
     align-items: center;
     overflow-wrap: anywhere; /*corta el texto y sigue abajo*/
+    margin-left: 10px;
 }
 
 .tarea-icono{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 32px;
     margin: 5px;
     align-self: left;
+    background-image: url('../images/borrar.png');
+   border: none;    
 }
 
 /* TAREA COMPLETADA*/
