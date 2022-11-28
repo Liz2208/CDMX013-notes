@@ -30,12 +30,12 @@ function TareaForm(props) {
             <input
                 className='tarea-input'
                 type='text'
-                placeholder='Escribe una nota'
+                placeholder='Write a new Note'
                 name='texto'
                 onChange={manejarCambio}
             />
             <button className='tarea-boton'>
-                Agregar Nota
+               New Note 📝
             </button>
         </form>
     )

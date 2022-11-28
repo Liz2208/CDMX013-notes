@@ -34,3 +34,16 @@ export function Testimonio(props){
           <div className="googlebtn">
         <img className='googlebtn' src={require('../images/btn_google.png')} />
       </div>
+
+
+      /* en css el hijo para cambiar colores en cada tarea*/ 
+/*.tarea-contenedor:nth-child(3n +1 ) {
+background-color: #c8c8f5;
+background-image: url('../images/notebook.png') ;
+}
+.tarea-contenedor:nth-child(3n +2 ) {
+    background-color: #a8d1e4;
+    }
+    .tarea-contenedor:nth-child(3n +3 ) {
+        background-color: #8af1ec;
+        }*/

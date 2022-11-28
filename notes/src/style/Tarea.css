@@ -9,21 +9,8 @@
     align-items: center;
     cursor: pointer;
     background-image: url('../images/notebook.png');
-    /*background-color: rgb(236, 236, 247);
-    border: 1px solid black;*/
-}
+   }
 
-/* el hijo para cambiar colores en cada tarea*/ 
-/*.tarea-contenedor:nth-child(3n +1 ) {
-background-color: #c8c8f5;
-background-image: url('../images/notebook.png') ;
-}
-.tarea-contenedor:nth-child(3n +2 ) {
-    background-color: #a8d1e4;
-    }
-    .tarea-contenedor:nth-child(3n +3 ) {
-        background-color: #8af1ec;
-        }*/
 
 .tarea-texto{
     width: 100%;
