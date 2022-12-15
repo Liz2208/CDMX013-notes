@@ -1,5 +1,7 @@
+import {initializeApp} from 'firebase/app';
+import {getAuth} from 'firebase/auth';
 
-export default {
+const firebaseConfig = {
   apiKey: "AIzaSyAfeqy3qIGBjp9mTFP4DT6PmI31Hwkdm7s",
   authDomain: "notes-369400.firebaseapp.com",
   projectId: "notes-369400",
@@ -8,3 +10,6 @@ export default {
   appId: "1:793214453152:web:d14ec2974b2bb5eafb50c5",
   measurementId: "G-ZWQETT1QFW"
 };
+
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);

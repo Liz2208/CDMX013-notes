@@ -1,24 +1,30 @@
-import './App.css';
-import ListaDeTareas from './componentes/ListaDeTareas';
-//import { Home } from './componentes/Home';
-//import { Main } from './componentes/Main';
-//import Login from './Login';
-//import Tarea from './componentes/Tarea';
-//import TareaForm from './componentes/TareaFormulario';
-import logo from './images/Dont.png';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Protected from './components/Protected';
+import { AuthContextProvider } from './context/AuthContext';
+import Account from './pages/Account';
+import Home from './pages/Home';
+import Signin from './pages/Signin';
 
 function App() {
   return (
-    <div className="App">
-     <div className='contenedor-logo'>
-    <img 
-    src={logo}
-    className='logo-notes'/>  
-      </div>
-      <div className='contenedor-principal'>
-      
-      <ListaDeTareas />
-      </div>
+    <div>
+      <AuthContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/signin' element={<Signin />} />
+          <Route
+            path='/account'
+            element={
+              <Protected>
+                <Account />
+              </Protected>
+            }
+          />
+        </Routes>
+      </AuthContextProvider>
     </div>
   );
 }
